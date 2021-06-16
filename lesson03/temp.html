@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fancyClass {
+            color:blue;
+            font-size: 300%;
+            border: 5px solid black;
+        }
+    </style>
+</head>
+<body>
+    <ul id="awesomePeople">
+        <li>Emilia</li>
+        <li>Max</li>
+        <li>Brian</li>
+        <li>Nathan</li>
+    </ul>
+    <input type="text" id="newUser"> 
+    <button onclick="addUser()"></button>
+    <br>
+    <h3 class="bigText">Tell me what time it is</h3>
+    <button onclick="displayTime()">Show time</button>
+    <div id="outputTime">Time has not yet been computed</div>
+    <script>
+        function addUser() {
+            let newUserToAdd = document.getElementById("newUser").value;
+            let ul = document.getElementById("awesomePeople");
+            let li = document.createElement("li");
+            li.innerHTML = newUserToAdd;
+            li.classList.add("fancyClass");
+            ul.appendChild(li);
+        }
+        function displayTime() {
+            document.getElementById("outputTime").innerHTML = new Date();
+            document.querySelector("#awesomePeople")
+        }
+
+
+
+
+    </script>
+</body>
+</html>

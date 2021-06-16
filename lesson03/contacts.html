@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="contacts.js"></script>
+</head>
+<body>
+    <table>
+        <thead>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Phone Number</th>
+            <th>Address</th>
+            <th>Edit?</th>
+        </thead>
+        <tbody id="contactsTableBody">
+            <tr id="1">
+                <td>John</td>
+                <td>Smith</td>
+                <td>555-666-7777</td>
+                <td>303 1st main street</td>
+                <td><button onclick="editContact('1')">Edit Contact</button></td>
+            </tr>
+            <tr id="2">
+                <td>Jenny</td>
+                <td>Anderson</td>
+                <td>444-555-7777</td>
+                <td>3005 Main street</td>
+                <td><button onclick="editContact('2')">Edit Contact</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <h4>Add New Contact</h4>
+    <input type="text" id="firstName" placeholder="First Name"><br>
+    <input type="text" id="lastName" placeholder="Last Name"><br>
+    <input type="text" id="phone" placeholder="Phone Number"><br>
+    <input type="text" id="address" placeholder="Address"><br>
+    <button onclick="saveContact()">Save Contact</button>
+</body>
+</html>
