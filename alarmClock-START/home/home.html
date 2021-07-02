@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <script src="../site.js"></script>
     <script src="home.js"></script>
 </head>
+
 <body>
     <h1>Current time: <span id="time"></span></h1>
     <input type="text" id="color" placeholder="Please enter a hexidecimal css color :)">
@@ -31,7 +33,7 @@
             <form name="alarmForm" onsubmit="return false">
                 Alarm title: <input type="text" name="alarmTitle">
                 <br>
-                Set alarm time 
+                Set alarm time
                 <select id="timeDropdown" name="alarmTime">
                 </select>
                 <br><br>
@@ -43,4 +45,5 @@
     <!-- Code for audio or perhaps a way to toggle the alarm sounding-->
     <audio id="alarm" src="../assets/archangelIntro.mp3" muted></audio>
 </body>
+
 </html>
