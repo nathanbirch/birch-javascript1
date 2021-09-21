@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 3</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Form to get to know you</h1>
+    <form action="" name="introduction" onsubmit="return false">
+        <input type="text" placeholder="First Name" name="first">
+        <br><br>
+        <input type="text" placeholder="Last Name" name="last">
+        <br><br>
+        <input type="text" placeholder="Favorite Color" name="color">
+        <br><br>
+        <input type="text" placeholder="Birth City" name="city">
+        <br><br>
+        <button type="submit" onclick="introductionFunction();">Submit form</button>
+    </form>
+    <br>
+    <table id="output">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Favorite Color</th>
+            <th>Birth City</th>
+        </tr>
+    </table>
+
+    <button onclick="createImage()"></button>
+    <img src="" alt="">
+    <div id='imgOutput'></div>
+</body>
+
+</html>
